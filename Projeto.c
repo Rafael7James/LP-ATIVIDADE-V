@@ -13,7 +13,7 @@ void inicio()
 {
     int esc;
     HUD();
-    printf("\nEscolha a operação desejada.\n");
+    printf("\nEscolha a operaÃ§Ã£o desejada.\n");
     printf("\n1- Localizador\n");
     printf("\n2- Registro de compras.\n");
     printf("\n3 - Sair.\n\n");
@@ -68,14 +68,14 @@ void localizadordelivros()
     localizador();
 
     printf("\nDigite a categoria desejada!\n\n");
-    printf("\n1 - Ação\n");
+    printf("\n1 - AÃ§Ã£o\n");
     printf("\n2 - Comedia.\n");
     printf("\n3- Romance.\n");
     printf("\n4 - Terror.\n");
-    printf("\n5 - Motivação.\n");
+    printf("\n5 - MotivaÃ§Ã£o.\n");
     printf("\n6 - Sair.\n");
 
-    printf("\nPor favor, digite a opção desejada: ");
+    printf("\nPor favor, digite a opÃ§Ã£o desejada: ");
     scanf("%d", &esc);
 
     faxina();
@@ -84,25 +84,25 @@ void localizadordelivros()
     {
     case 1:
 
-        printf("\nCategoria de Ação: \n");
+        printf("\nCategoria de AÃ§Ã£o: \n");
 
         printf("\nLivros disponiveis a baixo:");
 
         printf("\n1- O Hobbit | 50 R$\n");
         printf("2- Harry Potter e a pedra filosofal | 50 R$");
-        printf("\nQual livro você deseja?: ");
+        printf("\nQual livro vocÃª deseja?: ");
         scanf("%s", &esco);
         faxina();
         break;
     case 2:
 
-        printf("\nCategoria de Comédia: \n");
+        printf("\nCategoria de ComÃ©dia: \n");
 
         printf("\nLivros disponiveis a baixo:");
 
         printf("\n1- Auto da compadecida | 50 R$\n");
-        printf("2- As aventuras de Pinóquio | 50 R$");
-        printf("\nQual livro você deseja?: ");
+        printf("2- As aventuras de PinÃ³quio | 50 R$");
+        printf("\nQual livro vocÃª deseja?: ");
         scanf("%s", &esco);
         faxina();
         break;
@@ -115,7 +115,7 @@ void localizadordelivros()
 
         printf("\n1- Vermelho, branco e sangue | 50 R$ \n");
         printf("2- Verity | 50 R$");
-        printf("\nQual livro você deseja?: ");
+        printf("\nQual livro vocÃª deseja?: ");
         scanf("%s", &esco);
         faxina();
         break;
@@ -126,21 +126,21 @@ void localizadordelivros()
         printf("\nLivros disponiveis a baixo:");
 
         printf("\n1- It- A Coisa | 50 R$ \n");
-        printf("2- O cemitério maldito | 50 R$");
-        printf("\nQual livro você deseja?: ");
+        printf("2- O cemitÃ©rio maldito | 50 R$");
+        printf("\nQual livro vocÃª deseja?: ");
         scanf("%s", &esco);
         faxina();
         break;
 
     case 5:
 
-        printf("\nCategoria de Motivação: \n");
+        printf("\nCategoria de MotivaÃ§Ã£o: \n");
 
         printf("Livros disponiveis a baixo:");
 
         printf("\n1- Arrume sua cama | 50 R$ \n");
-        printf("\n2- O poder da Ação | 50 R$");
-        printf("\nQual livro você deseja?: ");
+        printf("\n2- O poder da AÃ§Ã£o | 50 R$");
+        printf("\nQual livro vocÃª deseja?: ");
         scanf("%s", &esco);
         faxina();
         break;
@@ -154,8 +154,8 @@ void localizadordelivros()
     }
     printf("\n\nDeseja comprar outro livro?");
     printf("\n1- Sim\n");
-    printf("2- Não\n");
-    printf("Digite a opção desejada: ");
+    printf("2- NÃ£o\n");
+    printf("Digite a opÃ§Ã£o desejada: ");
     scanf("%d", &esc);
     faxina();
     switch (esc)
@@ -187,38 +187,39 @@ reg();
     int esc;
     char reg[200];
 
-   printf("Quantos livros você deseja?: ");
+   printf("Quantos livros vocÃª deseja?: ");
    scanf("%d", &esc);
 switch (esc)
    {
    case 1:
-    printf("Seu total é de: 50 R$");
+    printf("Seu total Ã© de: 50 R$");
     break;
    case 2:
-   printf("Seu total é de: 100 R$");
+   printf("Seu total Ã© de: 100 R$");
    break;
     case 3:
-   printf("Seu total é de: 150 R$");
+   printf("Seu total Ã© de: 150 R$");
+   break;
     case 4:
-   printf("Seu total é de: 200 R$");
+   printf("Seu total Ã© de: 200 R$");
    break;
     case 5:
-   printf("Seu total é de: 250 R$");
+   printf("Seu total Ã© de: 250 R$");
    break;
     case 6:
-   printf("Seu total é de: 300 R$");
+   printf("Seu total Ã© de: 300 R$");
    break;
     case 7:
-   printf("Seu total é de: 350 R$");
+   printf("Seu total Ã© de: 350 R$");
    break;
     case 8:
-   printf("Seu total é de: 400 R$");
+   printf("Seu total Ã© de: 400 R$");
    break;
     case 9:
-   printf("Seu total é de: 500 R$");
+   printf("Seu total Ã© de: 500 R$");
    break;
     case 10:
-   printf("Seu total é de: 550 R$");
+   printf("Seu total Ã© de: 550 R$");
    break;
    break;
    default:
@@ -235,13 +236,13 @@ int o;
     printf("\n");
     gets(cart);
 
-    printf("\nDigite o número do cartão: ");
+    printf("\nDigite o nÃºmero do cartÃ£o: ");
     gets(cart);
 
-    printf("\nDigite a senha do cartão: ");
+    printf("\nDigite a senha do cartÃ£o: ");
     gets(pass);
 
-    printf("\nQual a localização ou CEP, para a entrega?: ");
+    printf("\nQual a localizaÃ§Ã£o ou CEP, para a entrega?: ");
     gets(loc);
 
     printf("\nDigite o seu cpf para confirmar a compra: \n");
